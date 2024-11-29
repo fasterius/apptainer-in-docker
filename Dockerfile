@@ -3,6 +3,7 @@ FROM golang:1.23.3-alpine3.20 AS builder
 RUN apk add --no-cache \
         # Required for apptainer to find min go version
         bash \
+        binutils-gold \
         cryptsetup \
         gawk \
         gcc \
